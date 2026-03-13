@@ -20,7 +20,7 @@ UnityのAR環境とROS2のシミュレーションのみで軌道制御を行う
 
 ```bash
 
-ros2 launch utra6\\\_550**\\\_**moveit\\\_config demo.launch.py
+ros2 launch utra6\_550**\_**moveit\_config demo.launch.py
 
 ```
 
@@ -28,7 +28,7 @@ ros2 launch utra6\\\_550**\\\_**moveit\\\_config demo.launch.py
 \*\*2. Unity通信用TCPエンドポイントの起動\*\*
 
 ```bash
-ros2 run ros\\\_tcp\\\_endpoint default\\\_server\\\_endpoint --ros-args -p tcp\\\_ip:=0.0.0.0 -p tcp\\\_port:=10000 \\\&
+ros2 run ros\_tcp\_endpoint default\_server\_endpoint --ros-args -p tcp\_ip:=0.0.0.0 -p tcp\\\_port:=10000 \&
 
 ```
 
@@ -37,7 +37,7 @@ ros2 run ros\\\_tcp\\\_endpoint default\\\_server\\\_endpoint --ros-args -p tcp\
 \*\*3. 制御用メインスクリプトの起動\*\*
 
 ```bash
-ros2 run utra6\\\_moveit mover.py
+ros2 run utra6\_moveit mover.py
 ```
 
 
@@ -59,7 +59,7 @@ ros2 launch arm\_controller utarm\_api\_server.launch.py
 \*\*2. MoveIt2! 環境の起動\*\*
 
 ```bash
-ros2 launch utra6\\\_550\\\_moveit\\\_config demo.launch.py
+ros2 launch utra6\_550\_moveit\_config demo.launch.py
 ```
 
 
@@ -67,14 +67,14 @@ ros2 launch utra6\\\_550\\\_moveit\\\_config demo.launch.py
 \*\*3. Unity通信用TCPエンドポイントの起動\*\*
 
 ```bash
-ros2 run ros\\\_tcp\\\_endpoint default\\\_server\\\_endpoint --ros-args -p tcp\\\_ip:=0.0.0.0 -p tcp\\\_port:=10000 \\\&
+ros2 run ros\_tcp\_endpoint default\_server\_endpoint --ros-args -p tcp\_ip:=0.0.0.0 -p tcp\_port:=10000 \&
 ```
 
 
 \*\*4. 制御用メインスクリプトの起動\*\*
 
 ```bash
-ros2 run utra6\\\_moveit mover.py
+ros2 run utra6\_moveit mover.py
 ```
 
 
