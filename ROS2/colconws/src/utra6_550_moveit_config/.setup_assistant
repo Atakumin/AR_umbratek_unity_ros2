@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: arm_description
+    relative_path: urdf/utra6.urdf
+  srdf:
+    relative_path: config/utra6.srdf
+  package_settings:
+    author_name: Aiko Takuma
+    author_email: aiko.takuma723@mail.kyutech.jp
+    generated_timestamp: 1768889464
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
